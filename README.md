@@ -1,6 +1,8 @@
 # SpringDoc NPE issue with HATEOAS
 
-This is a slight modification of https://github.com/didjoman/Springdoc-String-Schema-returned-mediatype-issue 
+This is a slight modification of https://github.com/didjoman/Springdoc-String-Schema-returned-mediatype-issue and is for https://github.com/springdoc/springdoc-openapi/issues/2902
+
+Run this to see the issue:
 
 ```sh
 git clone https://github.com/smurf667/springdoc-npe
