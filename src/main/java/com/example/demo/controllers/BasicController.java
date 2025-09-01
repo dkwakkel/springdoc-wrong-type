@@ -29,10 +29,12 @@ public class BasicController {
     @ResponseStatus(HttpStatus.OK)
     @Operation(summary = "get", description = "Provides a response.")
     @ApiResponse(content = @Content(mediaType = MediaTypes.HAL_JSON_VALUE,
-        schema = @io.swagger.v3.oas.annotations.media.Schema(implementation = Response.class)),
+        schema = @io.swagger.v3.oas.annotations.media.Schema(oneOf = {
+                Integer.class
+        })),
         responseCode = "200")
-    public Response get() {
-        return new Response("value");
+    public Object get() {
+        return 1;
     }
 
     // dummy
